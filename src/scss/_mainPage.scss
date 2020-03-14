@@ -1,0 +1,194 @@
+.main-page {
+  .section-a {
+    margin: 5rem;
+    height: 60vh;
+    text-align: center;
+
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+
+    &-heading {
+      margin-top: 1.5rem;
+      font-size: 5rem;
+      text-align: center;
+    }
+
+    .text-box {
+      font-size: 2rem;
+      padding: 2rem;
+    }
+
+    .btn {
+      border-radius: 1rem;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: $inship-color;
+      padding: 1rem 1rem;
+      background-color: white;
+      box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
+      @include transition-ease;
+    }
+
+    .btn:hover {
+      background-color: $inship-color;
+      color: white;
+    }
+
+    .btn:active {
+      transform: translateY(0.2rem);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .section-b {
+    height: 95vh;
+    background-image: linear-gradient($inship-color-background-darker),
+      url(../img/calculator.jpg);
+    background-size: cover;
+    background-position: top;
+    color: white;
+
+    clip-path: polygon(0 0, 100% 15vh, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 0, 100% 15vh, 100% 100%, 0% 100%);
+    position: relative;
+
+    &-heading {
+      padding: 5rem;
+      display: block;
+      position: absolute;
+      top: 15%;
+      left: 5%;
+      font-size: 5rem;
+    }
+
+    .text-box {
+      border-radius: 1rem;
+      background-color: rgba(139, 139, 139, 0.76);
+      padding: 5rem;
+      margin-right: 5rem;
+      text-align: justify;
+      position: absolute;
+      display: block;
+      font-size: 1.5rem;
+      top: 40%;
+      left: 5%;
+    }
+  }
+
+  .section-c {
+    text-align: center;
+    display: grid;
+    margin-top: 4rem;
+    height: 100vh;
+
+    &-heading {
+      font-size: 5rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+
+    .card {
+      border-radius: 1rem;
+      padding: 2rem;
+      &-title {
+        font-size: 3rem;
+      }
+
+      img {
+        border-radius: 1rem;
+        border: 0.1rem solid white;
+        margin-top: 1rem;
+        object-fit: cover;
+        width: 50%;
+      }
+
+      .text-box {
+        font-size: 1.7rem;
+        padding: 2rem;
+      }
+
+      .t2p {
+        display: block;
+      }
+
+      &-color-1 {
+        background-color: $APC-bg;
+        h3 {
+          color: $APC-light;
+        }
+
+        .text-box {
+          color: $APC-dark;
+        }
+
+        .btn {
+          @include btn($APC-bg, $APC-dark, 'light');
+        }
+
+        .btn:hover {
+          border: 0.1rem solid white;
+          color: $APC-dark;
+          background-color: $APC-bg;
+        }
+
+        .btn:active {
+          @include click-affect('light');
+        }
+      }
+
+      &-color-2 {
+        background-color: $CAPS-bg;
+
+        h3 {
+          color: $CAPS-dark;
+        }
+
+        .text-box {
+          color: $CAPS-light;
+        }
+        .btn {
+          @include btn($CAPS-bg, $CAPS-light, 'light');
+        }
+
+        .btn:hover {
+          border: 0.1rem solid white;
+          color: $CAPS-light;
+          background-color: $CAPS-bg;
+        }
+
+        .btn:active {
+          @include click-affect('light');
+        }
+      }
+
+      &-color-3 {
+        background-color: $T2P-bg;
+
+        h3 {
+          color: $T2P-color;
+        }
+
+        .text-box {
+          color: $T2P-color;
+        }
+
+        .btn {
+          @include btn($T2P-bg, $T2P-color, 'light');
+        }
+
+        .btn:hover {
+          border: 0.1rem solid white;
+          color: $T2P-color;
+          background-color: $T2P-bg;
+        }
+
+        .btn:active {
+          @include click-affect('light');
+        }
+      }
+    }
+  }
+}
