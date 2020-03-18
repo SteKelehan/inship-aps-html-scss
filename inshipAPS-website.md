@@ -1,5 +1,11 @@
 # Inship APS Website
 
+## Nyasha To do
+
+1. Nyasha look into modal pop up for videos
+2. Nyasha dive into CMS functionailty more
+3. Nyasha - TRELLO SET UP
+
 ## Layout
 
 ### Home Page
@@ -48,6 +54,27 @@
 
 ### 3 Product Pages
 
+#### On all page
+
+##### Into secetion
+
+1. Img -> same style as home page
+2. title -> name of product
+3. 2 buttons
+   1. watch a demo video
+   2. Contact about product
+
+
+
+##### Secetion A
+
+1. Header -> slogan
+2. 4 cards ( like netlify )
+   1. header in each
+   2. paragraph
+
+
+
 #### Tick To Post
 
 1. Name of product
@@ -79,6 +106,12 @@ Loads of links, pics and articals exapling why we automate
 ### Pricing policy
 
 - 2-300 words per pricing
+
+Take netlfy pricing page
+[netlify](https://www.netlify.com/pricing/)
+
+- Take a look at animations: [SPA](https://www.sap.com/uk/products/database-data-management/hana-database-management-system.html)
+
 
 ### Contact page
 
